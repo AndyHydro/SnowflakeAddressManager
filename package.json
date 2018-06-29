@@ -1,0 +1,25 @@
+{
+  "name": "SnowflakeAddressManager",
+  "version": "1.0.0",
+  "description": "A dApp for managing and proving ownership of Ethereum addresses.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx http-server -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndyHydro/SnowflakeAddressManager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndyHydro/SnowflakeAddressManager/issues"
+  },
+  "homepage": "https://github.com/AndyHydro/SnowflakeAddressManager#readme",
+  "dependencies": {
+    "eth-sig-util": "^1.4.2",
+    "http-server": "^0.11.1"
+  }
+}
