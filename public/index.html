@@ -9,6 +9,7 @@
 	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
 	<meta name="author" content="FreeHTML5.co" />
 
+	<link rel="shortcut icon" href="images/favicon.ico">
 	<!--
 	//////////////////////////////////////////////////////
 
@@ -45,10 +46,8 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	<script src="js/web3.min.js"></script>
-	<script src="js/Web3Webpacked.js"></script>
+	<script src="js/web3Webpacked.min.js"></script>
 	<script src="js/address.js"></script>
-
 
 	</head>
 	<body>
@@ -74,7 +73,7 @@
 				<div class="col-md-12 col-md-offset-0 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeInUp">
-							<h1 class="mb30">Immutable proof of Address Ownership.</h1>
+							<h1 class="mb30">Immutable proof of Ethereum Address Ownership.</h1>
 							<p>
 								<!-- <a href="http://freehtml5.co/" target="_blank" class="btn btn-primary">Download</a> or
 								<a href="https://vimeo.com/channels/staffpicks/93951774" class="link-watch popup-vimeo">Watch Video</a> -->
@@ -94,31 +93,31 @@
 				<div class="col-md-8 col-md-offset-2 text-center animate-box" data-animate-effect="fadeInUp">
 					<div class="fh5co-heading">
 						<h2>Claim an Address</h2>
-						<p>Claiming an address with your snowflake address allows you to have immutable proof that you own an address.</p>
+						<p>With your Snowflake, you can claim an address that you control, providing immutable proof that you own it.</p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4 col-sm-4 ">
 					<div class="feature-center animate-box" data-animate-effect="fadeInUp">
-						<h3>Step 1: Initiate a claim</h3>
-						<p>Use your main snowflake account when submitting</p>
-						<input id="address" type="text" placeholder="address"></input>
+						<h3>Step 1: Initiate a Claim</h3>
+						<p>Submit from your Snowflake account</p>
+						<input id="address" type="text" placeholder="Address to Claim"></input>
 			      <button onclick="initiateClaim()">Initiate Claim</button>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4 ">
 					<div class="feature-center animate-box" data-animate-effect="fadeInUp">
-						<h3>Step 2: Sign a message</h3>
-						<p>Use the account you are claiming to sign the message</p>
-						<button onclick="signHashedSecret()">Sign Hash</button>
+						<h3>Step 2: Sign a Message</h3>
+						<p>Sign from the account you are claiming</p>
+						<button onclick="signHashedSecret()">Sign Secret</button>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4 ">
 					<div class="feature-center animate-box" data-animate-effect="fadeInUp">
-						<h3>Step 3: Finalize claim</h3>
-						<p>Use your main snowflake account when submitting</p>
-						<button onclick="finalizeClaim()">finalize Claim</button>
+						<h3>Step 3: Finalize Claim</h3>
+						<p>Submit from your Snowflake account</p>
+						<button onclick="finalizeClaim()">Finalize Claim</button>
 					</div>
 				</div>
 			</div>
@@ -129,14 +128,14 @@
 		<div class="container">
 			<div class="row row-pb-md">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading  animate-box">
-					<h2>View Owned Addresses by a Snowflake</h2>
-					<input id="snowflakeId" placeholder="snowflake id"></input>
+					<h2>View Addresses Owned by a Snowflake</h2>
+					<input id="snowflakeId" placeholder="Snowflake Id"></input>
 		      <button onclick="ownedAddresses()">See Owned Addresses</button>
 				</div>
 			</div>
 
 			<div class="row row-pb-md">
-				<div id="address_list" class="col-md-8 col-md-offset-2 text-center fh5co-heading  animate-box">
+				<div id="address_list" class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 				</div>
 			</div>
 		</div>
@@ -149,9 +148,9 @@
 			<div class="row row-pb-md">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading  animate-box">
 					<h2>Check if a Snowflake Owns an Address</h2>
-					<input id="snowflakeId_ownsAddress" placeholder="snowflake id"></input>
-		      <input id="address_ownsAddress" placeholder="address"></input>
-		      <button onclick="ownsAddress()">See Owned Address</button>
+					<input id="snowflakeId_ownsAddress" placeholder="Snowflake Id"></input>
+		      <input id="address_ownsAddress" placeholder="Address"></input>
+		      <button onclick="ownsAddress()">Check If Owned</button>
 				</div>
 			</div>
 
@@ -168,7 +167,7 @@
 			<div class="row row-pb-md">
 				<div class="col-md-12 fh5co-widget text-center">
 					<h3>Snowflake Address Manager</h3>
-					<p>A dApp to manage and prove ownership of multiple Ethereum address.</p>
+					<p>A dApp to manage and prove ownership of multiple Ethereum addresses.</p>
 				</div>
 
 			</div>
